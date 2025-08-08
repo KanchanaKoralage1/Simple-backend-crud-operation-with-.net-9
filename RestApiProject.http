@@ -1,0 +1,38 @@
+@URL = http://localhost:5041
+
+GET {{URL}}/api/books
+Accept:application/json
+
+###
+
+GET {{url}}/api/books/1
+Accept: application/json
+
+###
+
+POST {{URL}}/api/books
+Content-Type:application/json
+{
+  "title":"7th book",
+  "author":"kanchana",
+  "yearPublished":2025
+}
+
+###
+
+PUT {{URL}}/api/books/5
+Content-Type:application/json
+
+{
+  
+  "id":5,
+  "title":"67th book updated",
+  "author":"kanchana",
+  "yearPublished":2024
+
+}
+
+###
+
+DELETE {{URL}}/api/books/7
+
